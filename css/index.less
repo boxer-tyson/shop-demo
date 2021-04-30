@@ -1,0 +1,134 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+}
+a {
+  text-decoration: none;
+  color: #707070;
+}
+// 约束当屏幕大于 750px 的时候，html字体大小就不不变化了
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+.topheader{
+  height: 1.3rem;
+    width:100%;
+    text-align: center;
+    line-height: 1.3rem;
+    font-size: 0.6rem;
+    background-color:#f2f2f2;
+}
+.search{
+  padding-bottom:0.5rem;
+  text-align: center;
+  line-height:2rem;
+  .search_box{
+    position: relative;
+    width:70%;
+    margin:0 auto;
+.search_input{
+  // border:solid .026667rem green;
+  border: none;
+    -webkit-border-radius: .6rem;
+    padding: 0.06rem 0.4rem 0 1.3rem;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: #FFF;
+    font-size: .56rem;
+    color: #999999;
+    -webkit-appearance: none;
+}
+.search_img{
+  position: absolute;
+    width: .72rem;
+    height: .72rem;
+    top: .9rem;
+    left: .4rem;
+    background-size: .72rem .72rem;
+ background-image: url(../images/放大镜.gif);
+}
+  }
+}
+
+.logo{
+  img{
+    height:8rem;
+  }
+}
+
+.show_goods{
+  display: flex;
+  .goods_item{
+    padding: .5rem;
+    text-align: center;
+    width:50%;
+    img{
+      margin:0 auto;
+      width: 8rem;
+      height: 10rem;
+    }
+   .price_num{
+     margin:0 auto;
+     width: 4.8rem;
+     display: flex;
+     justify-content:space-around;
+   }
+    .price_info{
+      height: 4.08rem;
+    }
+    .good_title{
+      padding-top:0.2rem;
+      padding-bottom: 0.2rem;
+      font-size: .453333rem;
+      color:#595959;
+    }
+    .price_elide{
+      color:#e0d3cf;
+      text-decoration: line-through;
+      font-size: .4rem;
+      
+    }
+    .price_normal{
+      font-size: .4rem;
+      color:#6a7d91;
+     
+    }
+  }
+
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 2.933333rem;
+  width: 100%;
+
+  z-index: 99999;
+  display: flex;
+  padding: 0.533333rem;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 1.04rem;
+      height: 1.093333rem;
+    }
+    p {
+      font-size: 0.586667rem;
+      color: #666666;
+      margin-top: 0.266667rem;
+    }
+  }
+}
+
